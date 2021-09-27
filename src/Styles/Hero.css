@@ -1,0 +1,17 @@
+.hero {
+  background-image: url("../Images/Hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Hero.css.map */

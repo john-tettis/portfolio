@@ -1,0 +1,15 @@
+@import'_BreakPoint';
+@import 'Color';
+
+
+.hero{
+    background-image: url('../Images/Hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
