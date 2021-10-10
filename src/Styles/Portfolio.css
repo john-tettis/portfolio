@@ -1,0 +1,190 @@
+.portfolio {
+  min-height: 100vh;
+  text-align: center;
+  display: block;
+}
+
+.portfolio-title {
+  color: #F57927;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.portfolio-line {
+  margin: auto;
+  height: 2px;
+  width: 80%;
+  background-color: #9dc4ff;
+  border: none;
+}
+
+.portfolio-container {
+  margin: 2rem 4rem 0 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, max-content))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, -webkit-max-content));
+      grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+  grid-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: initial;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1;
+    margin: .5rem;
+  }
+}
+
+.portfolio .project {
+  position: relative;
+  margin: 1rem;
+  width: 30rem;
+  height: 15rem;
+  background-size: cover;
+  background-color: rgba(1, 14, 36, 0.6);
+  background-blend-mode: multiply;
+  background-position: center center;
+  border-radius: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .project {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .portfolio .project {
+    width: 100%;
+  }
+}
+
+.portfolio .project-title {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 1rem;
+  z-index: 4;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.portfolio .project-arrow-holder {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(1, 14, 36, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .project-arrow-holder:hover .project-arrow {
+  -webkit-filter: invert(60%) sepia(87%) saturate(3380%) hue-rotate(347deg) brightness(106%) contrast(92%);
+          filter: invert(60%) sepia(87%) saturate(3380%) hue-rotate(347deg) brightness(106%) contrast(92%);
+}
+
+.portfolio .project-description {
+  margin: 5rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+.portfolio .project-link {
+  font-size: 1.2rem;
+  margin: 2px;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio .project-link div {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.portfolio .project-link:hover {
+  color: #F57927;
+}
+
+.portfolio .project-link:hover > div {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio .project-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #010e24;
+  position: absolute;
+  bottom: 150%;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 3;
+}
+
+.portfolio .project-overlay.show {
+  bottom: 0;
+}
+
+.portfolio .project-overlay-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=Portfolio.css.map */

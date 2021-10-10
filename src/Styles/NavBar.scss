@@ -3,13 +3,16 @@
 
 .navbar{
     height:60px;
-    width:100vw;
+    width:100%;
     position:fixed;
     top:0;
     left:0;
-    background-color:rgba($blue, .5);
+    background-color:rgba($dark, .5);
     display:flex;
     align-items:center;
+    @include mobile{
+        justify-content:flex-end;
+    }
     
     &-list{
         margin:0 0 0 10vw;
@@ -34,9 +37,10 @@
         }
     }
     .hamburger{
-        margin: auto 2rem auto auto;
+        margin: auto 1rem auto auto;
+        padding:.5rem;
         color:white;
-        height:40px;
+        height:50px;
         width:auto;
         display:none;
         @include mobile{
@@ -49,6 +53,83 @@
 
 
 .active{
-    color:$orange;
-    font-weight: bold;
+    color:$orange !important;
+    font-weight: bold !important;
 }
+
+#fly-out-menu {
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .8s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+   
+#fly-out-menu.hide {
+transform: translate3d(-100%, 0, 0);
+}
+   
+  #fly-out-menu.show {
+    transform: translate3d(0%, 0, 0);
+    overflow: hidden;
+  }
+
+  .flyout{
+
+    &-list{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        &-item{
+            width:80%;
+            padding: 2rem 0;
+            font-size: 4rem;
+            color:white;
+            transition: filter .3s ease;
+
+            &:hover{
+                filter: brightness(.8)
+            }
+
+        }
+        &-arrow{
+            height:15rem;
+            transition:transform .5s ease;
+
+            &.right{
+                transform: rotate3d(0,0,0,0);
+
+            }
+            
+            &.left{
+                transform: rotate3d(0,1,0,180deg);
+
+            }
+            &-container{
+                height:100%;
+                width:8rem;
+                background-color: rgba($dark,.4);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                &:focus{
+                    .flyout-list-arrow{
+                        filter: invert(60%) sepia(87%) saturate(3380%) hue-rotate(347deg) brightness(106%) contrast(92%);
+                    }
+                }
+            }
+        }
+    }
+  }
