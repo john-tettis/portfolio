@@ -47,8 +47,15 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
 .hero-caption {
   color: white;
+  margin: auto 1.5rem;
   font-weight: 200;
   font-size: 2rem;
   width: 40rem;
@@ -59,6 +66,12 @@
   .hero-caption {
     width: 20rem;
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-caption {
+    font-size: 1rem;
   }
 }
 

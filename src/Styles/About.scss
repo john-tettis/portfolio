@@ -1,0 +1,41 @@
+@import'_BreakPoint';
+@import 'Color';
+
+
+
+.about{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    background:$orange;
+    &-title{
+        font-size:4rem;
+        color:white;
+        text-align:center;
+    }
+    &-img{
+        border-radius:100%;
+    }
+    &-text{
+        color:white;
+        font-size:1.8rem;
+        text-align:center;
+        line-height:2.4rem;
+        margin-top:1rem;
+    }
+    &-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        &-inner{
+            padding:1rem;
+            // border:solid;
+            width:30rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:flex-start;
+        }
+        
+    }
+}

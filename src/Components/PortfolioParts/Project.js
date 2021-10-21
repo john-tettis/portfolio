@@ -5,7 +5,6 @@ import arrow from '../../Images/down-arrow.svg'
 const Project=({image, description, link, name})=>{
     let [overlay, setOverlay] = useState(false)
     let show = overlay? 'show':'';
-    let active = overlay ? 'active':''
 
     const toggleOverlay=()=>{
         setOverlay(!overlay)
@@ -22,7 +21,7 @@ let style={
             onMouseLeave={()=>setOverlay(false)}
             style={style} className='project'
             >
-            <h3 className={`project-title ${active}`}>{name}</h3>
+            <h3 className={`project-title ${show}`}>{name}</h3>
             <div onClick={toggleOverlay} className='project-arrow-holder'>
                 <img className='project-arrow' src={arrow}></img>
             </div>
@@ -30,6 +29,7 @@ let style={
                 <p className='project-description'>{description}</p>
                 <div className='project-overlay-button-container'>
                     <a target='_blank' href={link.git}className='project-link'><div>GitHub Repo</div></a>
+                    <span className='project-link-line'></span>
                     <a target='_blank' href={link.site}className='project-link'><div>View Deployment</div></a>
                 </div>
             </div>

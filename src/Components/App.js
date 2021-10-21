@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Portfolio from './PortfolioParts/Portfolio'
 import React, {useState}from 'react'
 import FlyOutMenu from './FlyOutMenu'
+import About from './About'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <NavBar toggleMenu={toggleMenu}/>
       <Hero/>
       <Portfolio/>
+      <About/>
       <FlyOutMenu show={showMenu} toggleMenu={toggleMenu}/>
       
     </>

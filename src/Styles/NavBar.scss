@@ -10,6 +10,7 @@
     background-color:rgba($dark, .5);
     display:flex;
     align-items:center;
+    z-index:20;
     @include mobile{
         justify-content:flex-end;
     }
@@ -21,7 +22,7 @@
         display:flex;
         align-items:center;
 
-        @include mobile{
+        @include tablet{
             display:none;
             }
     }
@@ -43,7 +44,7 @@
         height:50px;
         width:auto;
         display:none;
-        @include mobile{
+        @include tablet{
             display:block;
             }
     }

@@ -30,11 +30,14 @@
         @include tablet{
             font-size:4rem;
         }
+        @include mobile{
+            font-size:2rem;
+        }
     }
 
     &-caption{
         color:white;
-        // margin-top:1.5rem;
+        margin: auto 1.5rem;
         font-weight:200;
         font-size:2rem;
         width:40rem;
@@ -42,6 +45,9 @@
         @include tablet{
             width:20rem;
             font-size:1.6rem;
+        }
+        @include mobile{
+            font-size:1rem;
         }
         
     }
