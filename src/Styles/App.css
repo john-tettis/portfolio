@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(1, 14, 36, 0.5);
+  background-color: #010e24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,10 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+.navbar.opacity {
+  background-color: rgba(1, 14, 36, 0.5);
 }
 
 .navbar-list {
@@ -185,7 +189,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 50%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,18 +292,29 @@
 .portfolio {
   min-height: 100vh;
   text-align: center;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .portfolio-title {
   color: #F57927;
   font-size: 4rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 
 .portfolio-line {
-  margin: auto;
+  margin: 0 auto;
   height: 2px;
   width: 80%;
   background-color: #9dc4ff;
@@ -307,6 +322,7 @@
 }
 
 .portfolio-container {
+  width: 95%;
   margin: 2rem 4rem 0 4rem;
   display: -ms-grid;
   display: grid;
@@ -317,7 +333,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: initial;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -446,10 +462,6 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.portfolio .project-link:hover .project-link-line {
-  display: none;
-}
-
 .portfolio .project-link-line {
   width: 1px;
   background-color: #415472;
@@ -508,5 +520,9 @@
 
 body {
   overflow-y: scroll;
+}
+
+h2 {
+  margin-top: 5rem !important;
 }
 /*# sourceMappingURL=App.css.map */

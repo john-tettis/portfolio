@@ -1,12 +1,14 @@
-import React, {useRef} from 'react';
+import React, {useRef,useState} from 'react';
 import {Link } from "react-scroll";
 import hamburger from '../Images/hamburger.svg'
+import useScroll from './Hooks/useScroll'
 
 const NavBar= ({toggleMenu})=>{
-
+    let [opacity, setOpacity] = useState('')
+        useScroll(setOpacity,120,'opacity','')
     return(
         <>
-        <nav className='navbar'>
+        <nav className={`navbar ${opacity}`}>
             <ul className='navbar-list'>
                 <li className='navbar-list-item'>
                     <Link spy={true} smooth={true}  duration={800} activeClass='active' to='home'>Home</Link>

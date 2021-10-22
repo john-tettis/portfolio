@@ -1,6 +1,13 @@
 @import'_BreakPoint';
 @import 'Color';
 
+@mixin hoverGrow{
+    &:hover{
+        padding:.75rem;
+        margin:.25rem;
+        
+    }
+}
 
 
 .about{
@@ -15,6 +22,33 @@
     }
     &-img{
         border-radius:100%;
+    }
+    &-icon{
+        max-width:3rem;
+        padding:.5rem;
+        margin: .5rem;
+        transition:all .2s;
+        background:#303030 ;
+        border-radius:100%;
+        &.img{
+            height:3rem;
+            width:3rem;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            img{
+                width:100%;
+            }
+        }
+        &-container{
+            position:relative;
+            width:100%;
+            margin-top:2rem;
+            display:flex;
+            align-items:center;
+            justify-content: flex-start;
+        }
+        @include hoverGrow()
     }
     &-text{
         color:white;
@@ -38,4 +72,14 @@
         }
         
     }
+}
+
+
+.fa-node-js{
+    color:#3c873a;
+}
+.fa-react{
+    color: #61DBFB;
+    background:#282c34;
+    border-radius:100%;
 }

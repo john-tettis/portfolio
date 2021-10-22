@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(1, 14, 36, 0.5);
+  background-color: #010e24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,10 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+.navbar.opacity {
+  background-color: rgba(1, 14, 36, 0.5);
 }
 
 .navbar-list {

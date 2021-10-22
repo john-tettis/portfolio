@@ -6,28 +6,31 @@
 .portfolio{
     min-height: 100vh;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
     &-title{
         color:$orange;
         font-size:4rem;
         margin-bottom:1rem;
-        margin-top:1rem;
     }
     &-line{
-        margin:auto;
+        margin:0 auto;
         height:2px;
         width:80%;
         background-color:$bright;
         border:none;
     }
     &-container{
+        width:95%;
         margin:2rem 4rem 0 4rem;
         
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
         grid-gap: 5px;
         justify-content: center;
-        padding: initial;
+        padding: 1rem 1rem 3rem 1rem;
         @include tablet{
             display:inline-flex;
             flex-flow: row wrap;
