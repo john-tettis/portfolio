@@ -12,6 +12,8 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 20;
+  -webkit-box-shadow: 5px 2px 8px #112C56;
+          box-shadow: 5px 2px 8px #112C56;
 }
 
 @media screen and (max-width: 430px) {
@@ -23,6 +25,8 @@
 }
 
 .navbar.opacity {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(1, 14, 36, 0.5);
 }
 

@@ -6,8 +6,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  min-height: 60rem;
+}
+
+.about-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 45rem;
   background: #F57927;
+  -webkit-box-shadow: 5px 2px 8px #112C56;
+          box-shadow: 5px 2px 8px #112C56;
+}
+
+.about-bottom {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 15rem;
+  -webkit-box-shadow: 2px 2px 8px #112C56 inset;
+          box-shadow: 2px 2px 8px #112C56 inset;
+}
+
+.about-bottom h4 {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #112C56;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .about-title {
@@ -21,7 +63,10 @@
 }
 
 .about-icon {
-  max-width: 3rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  vertical-align: middle;
   padding: .5rem;
   margin: .5rem;
   -webkit-transition: all .2s;
@@ -31,8 +76,8 @@
 }
 
 .about-icon.img {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -49,7 +94,6 @@
 .about-icon-container {
   position: relative;
   width: 100%;
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,8 +106,8 @@
 }
 
 .about-icon:hover {
-  padding: .75rem;
-  margin: .25rem;
+  -webkit-box-shadow: 0px 0px 12px #F57927;
+          box-shadow: 0px 0px 12px #F57927;
 }
 
 .about-text {

@@ -65,6 +65,11 @@
   }
 }
 
+.portfolio-button {
+  background-color: rgba(17, 44, 86, 0.5);
+  border-radius: 100%;
+}
+
 .portfolio .project {
   position: relative;
   margin: 1rem;

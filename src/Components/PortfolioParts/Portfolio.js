@@ -1,6 +1,9 @@
 import React from 'react';
 import Project from './Project'
 import axiomatic from '../../Images/Axiomatic.png'
+import down from '../../Images/down-arrow.svg'
+import {Link} from 'react-scroll'
+import '../../Styles/Portfolio.css'
 
 let project={
     name:'Axiomatic',
@@ -28,6 +31,7 @@ const Portfolio=({projects=[project,project,project,project]})=>{
 
 
             </div>
+            {/* <Link  className='portfolio-button'><img className='portfolio-button-img'src={down}></img></Link> */}
 
         </section>
     )

@@ -39,8 +39,13 @@
             z-index:1;
             margin:.5rem;
         }
-    
+  
     }
+    &-button{
+        background-color: rgba($blue,.5);
+        border-radius: 100%;
+    }
+    
 
     .project{
         position:relative;

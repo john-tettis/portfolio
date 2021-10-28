@@ -11,10 +11,12 @@
     display:flex;
     align-items:center;
     z-index:20;
+    @include shadow;
     @include mobile{
         justify-content:flex-end;
     }
     &.opacity{
+        box-shadow: none;
         background-color:rgba($dark,.5);
     }
     
