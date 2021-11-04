@@ -14,7 +14,7 @@ const Portfolio=({projects=[project,project,project,project]})=>{
     return(
         <section className="portfolio">
             <h2 className='portfolio-title'>Portfolio</h2>
-            <hr className='portfolio-line'/>
+            <hr name='portfolio' className='line'/>
             <div className='portfolio-container'>
                 {projects.map(p=>
                     <Project

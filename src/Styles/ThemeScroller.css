@@ -1,0 +1,11 @@
+.theme-scroller {
+  max-height: 30vh;
+  height: 30vh;
+  background: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-shadow: 1px 1px 8px #415472 inset;
+          box-shadow: 1px 1px 8px #415472 inset;
+}
+/*# sourceMappingURL=ThemeScroller.css.map */

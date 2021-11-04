@@ -1,0 +1,11 @@
+@import 'Color';
+
+.theme-scroller{
+    max-height:30vh;
+    height:30vh;
+    background:white;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    box-shadow:1px 1px 8px $light inset;
+}

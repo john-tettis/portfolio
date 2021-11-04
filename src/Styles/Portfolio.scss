@@ -10,16 +10,10 @@
     &-title{
         color:$orange;
         font-size:4rem;
-        margin-bottom:1rem;
+        margin-bottom:.5rem;
         margin-top:1rem;
     }
-    &-line{
-        margin:auto;
-        height:2px;
-        width:80%;
-        background-color:$bright;
-        border:none;
-    }
+   
     &-container{
         margin:2rem 4rem 0 4rem;
         
@@ -43,7 +37,7 @@
         position:relative;
         margin:1rem;
         width:30rem;
-        height:15rem;
+        min-height:15rem;
         background-size: cover;
         background-color:rgba($dark, .6);
         background-blend-mode: multiply;
@@ -63,8 +57,8 @@
         }
 
         &-title{
-            font-size:1.8rem;
             color:white;
+            font-size:1.8rem;
             font-weight:400;
             margin-top:1rem;
             z-index:4;

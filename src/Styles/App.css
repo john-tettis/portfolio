@@ -108,9 +108,11 @@
 }
 
 .flyout-list {
+  margin: 0 auto;
   list-style: none;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  width: 10rem;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,23 +120,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flyout-list-item {
-  width: 80%;
-  padding: 2rem 0;
-  font-size: 4rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
   color: white;
   -webkit-transition: -webkit-filter .3s ease;
   transition: -webkit-filter .3s ease;
   transition: filter .3s ease;
   transition: filter .3s ease, -webkit-filter .3s ease;
+  text-align: left;
 }
 
 .flyout-list-item:hover {
@@ -161,8 +163,10 @@
 }
 
 .flyout-list-arrow-container {
+  position: absolute;
+  right: 0;
   height: 100%;
-  width: 8rem;
+  width: 4rem;
   background-color: rgba(1, 14, 36, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +242,8 @@
 .hero-caption {
   color: white;
   margin: auto 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: 200;
   font-size: 2rem;
   width: 40rem;
@@ -294,16 +300,8 @@
 .portfolio-title {
   color: #F57927;
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   margin-top: 1rem;
-}
-
-.portfolio-line {
-  margin: auto;
-  height: 2px;
-  width: 80%;
-  background-color: #9dc4ff;
-  border: none;
 }
 
 .portfolio-container {
@@ -344,7 +342,7 @@
   position: relative;
   margin: 1rem;
   width: 30rem;
-  height: 15rem;
+  min-height: 15rem;
   background-size: cover;
   background-color: rgba(1, 14, 36, 0.6);
   background-blend-mode: multiply;
@@ -376,8 +374,8 @@
 }
 
 .portfolio .project-title {
-  font-size: 1.8rem;
   color: white;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-top: 1rem;
   z-index: 4;
@@ -446,10 +444,6 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.portfolio .project-link:hover .project-link-line {
-  display: none;
-}
-
 .portfolio .project-link-line {
   width: 1px;
   background-color: #415472;
@@ -504,9 +498,52 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
 }
 
 body {
   overflow-y: scroll;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+h1, h2, h3, p, img {
+  max-width: 60ch;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+  .text-light, .text-lead {
+    font-size: 1.2rem !important;
+  }
+}
+
+.text-light, .text-lead {
+  font-size: 1.625rem;
+}
+
+.text-light {
+  padding: 0 1rem .5rem 1rem;
+  color: white;
+  font-weight: 300;
+}
+
+.text-lead {
+  padding: 0 1rem .5rem 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.line {
+  margin: 0 auto;
+  height: 2px;
+  max-width: 80%;
+  width: 40rem;
+  background-color: #9dc4ff;
+  border: none;
 }
 /*# sourceMappingURL=App.css.map */
