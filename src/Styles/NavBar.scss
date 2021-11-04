@@ -7,12 +7,17 @@
     position:fixed;
     top:0;
     left:0;
-    background-color:rgba($dark, .5);
+    background-color:$dark;
     display:flex;
     align-items:center;
     z-index:20;
+    @include shadow;
     @include mobile{
         justify-content:flex-end;
+    }
+    &.opacity{
+        box-shadow: none;
+        background-color:rgba($dark,.5);
     }
     
     &-list{

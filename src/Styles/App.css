@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(1, 14, 36, 0.5);
+  background-color: #010e24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +12,8 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 20;
+  -webkit-box-shadow: 5px 2px 8px #112C56;
+          box-shadow: 5px 2px 8px #112C56;
 }
 
 @media screen and (max-width: 430px) {
@@ -20,6 +22,12 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+.navbar.opacity {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(1, 14, 36, 0.5);
 }
 
 .navbar-list {
@@ -189,7 +197,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 50%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,8 +279,8 @@
   border-radius: 6px;
   font-size: 1.5rem;
   color: #F57927;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
 }
 
 .hero-button:focus {
@@ -294,7 +302,19 @@
 .portfolio {
   min-height: 100vh;
   text-align: center;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .portfolio-title {
@@ -305,6 +325,7 @@
 }
 
 .portfolio-container {
+  width: 95%;
   margin: 2rem 4rem 0 4rem;
   display: -ms-grid;
   display: grid;
@@ -315,7 +336,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: initial;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -336,6 +357,11 @@
     z-index: 1;
     margin: .5rem;
   }
+}
+
+.portfolio-button {
+  background-color: rgba(17, 44, 86, 0.5);
+  border-radius: 100%;
 }
 
 .portfolio .project {
@@ -503,6 +529,10 @@
 
 body {
   overflow-y: scroll;
+}
+
+h2 {
+  margin-top: 5rem !important;
 }
 
 h1, h2, h3 {

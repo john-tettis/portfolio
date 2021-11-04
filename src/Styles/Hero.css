@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 50%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,8 +85,8 @@
   border-radius: 6px;
   font-size: 1.5rem;
   color: #F57927;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
 }
 
 .hero-button:focus {

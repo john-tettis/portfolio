@@ -1,7 +1,19 @@
 .portfolio {
   min-height: 100vh;
   text-align: center;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .portfolio-title {
@@ -12,6 +24,7 @@
 }
 
 .portfolio-container {
+  width: 95%;
   margin: 2rem 4rem 0 4rem;
   display: -ms-grid;
   display: grid;
@@ -22,7 +35,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: initial;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +56,11 @@
     z-index: 1;
     margin: .5rem;
   }
+}
+
+.portfolio-button {
+  background-color: rgba(17, 44, 86, 0.5);
+  border-radius: 100%;
 }
 
 .portfolio .project {

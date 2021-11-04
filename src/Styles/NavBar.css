@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(1, 14, 36, 0.5);
+  background-color: #010e24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +12,8 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 20;
+  -webkit-box-shadow: 5px 2px 8px #112C56;
+          box-shadow: 5px 2px 8px #112C56;
 }
 
 @media screen and (max-width: 430px) {
@@ -20,6 +22,12 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+.navbar.opacity {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(1, 14, 36, 0.5);
 }
 
 .navbar-list {

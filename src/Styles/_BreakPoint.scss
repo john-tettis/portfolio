@@ -8,4 +8,11 @@
     @media screen and (max-width:768px){
         @content
     }
+};
+
+@mixin shadow{
+    box-shadow: 5px 2px 8px $blue;
+}
+@mixin shadowInset{
+    box-shadow: 2px 2px 8px $blue inset;
 }
